@@ -13,7 +13,8 @@ class FieldSurveyJSONParser {
     static let dateFormat = DateFormatter()
     
     class func parse(_ data: Data) -> [FieldSurvey] {
-        var fieldSurvey = [FieldSurvey]()
+        
+        var fieldSurveys = [FieldSurvey]()
         
         
         dateFormat.dateFormat = "YYYY-MM-dd HH:mm"
@@ -33,7 +34,7 @@ class FieldSurveyJSONParser {
                            let date = dateFormat.date(from: dateString) {
                            
                             if let fieldSurvey = FieldSurvey(className: className, title: title, description: description, date: date) {
-                                fieldSurvey.append(fieldSurvey)
+                                fieldSurveys.append(fieldSurvey)
                                 
                                 
                             }
@@ -53,7 +54,7 @@ class FieldSurveyJSONParser {
         
         
         
-        return fieldSurvey
+        return fieldSurveys
     }
     
 }

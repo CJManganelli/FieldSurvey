@@ -19,6 +19,9 @@
 		C33D6A2A1F1D9C5E006AC46E /* FieldSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A291F1D9C5E006AC46E /* FieldSurvey.swift */; };
 		C33D6A2C1F1DA04F006AC46E /* FieldSurveryJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A2B1F1DA04F006AC46E /* FieldSurveryJSONParser.swift */; };
 		C33D6A2E1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A2D1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift */; };
+		C33D6A301F1DBC81006AC46E /* FieldSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A2F1F1DBC81006AC46E /* FieldSurveyViewController.swift */; };
+		C33D6A321F1DBCDC006AC46E /* FieldSurveyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A311F1DBCDC006AC46E /* FieldSurveyDetailViewController.swift */; };
+		C33D6A341F1DD086006AC46E /* FieldSurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A331F1DD086006AC46E /* FieldSurveyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		C33D6A291F1D9C5E006AC46E /* FieldSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurvey.swift; sourceTree = "<group>"; };
 		C33D6A2B1F1DA04F006AC46E /* FieldSurveryJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveryJSONParser.swift; sourceTree = "<group>"; };
 		C33D6A2D1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveryJSONLoader.swift; sourceTree = "<group>"; };
+		C33D6A2F1F1DBC81006AC46E /* FieldSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyViewController.swift; sourceTree = "<group>"; };
+		C33D6A311F1DBCDC006AC46E /* FieldSurveyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyDetailViewController.swift; sourceTree = "<group>"; };
+		C33D6A331F1DD086006AC46E /* FieldSurveyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,9 @@
 		C33D69EE1F1D8E2B006AC46E /* FieldSurvey */ = {
 			isa = PBXGroup;
 			children = (
+				C33D6A2F1F1DBC81006AC46E /* FieldSurveyViewController.swift */,
+				C33D6A311F1DBCDC006AC46E /* FieldSurveyDetailViewController.swift */,
+				C33D6A331F1DD086006AC46E /* FieldSurveyTableViewCell.swift */,
 				C33D6A201F1D93BF006AC46E /* Model */,
 				C33D69EF1F1D8E2B006AC46E /* AppDelegate.swift */,
 				C33D69F31F1D8E2B006AC46E /* Main.storyboard */,
@@ -286,6 +295,9 @@
 				C33D69F01F1D8E2B006AC46E /* AppDelegate.swift in Sources */,
 				C33D6A281F1D9A29006AC46E /* Field.swift in Sources */,
 				C33D6A2E1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift in Sources */,
+				C33D6A341F1DD086006AC46E /* FieldSurveyTableViewCell.swift in Sources */,
+				C33D6A301F1DBC81006AC46E /* FieldSurveyViewController.swift in Sources */,
+				C33D6A321F1DBCDC006AC46E /* FieldSurveyDetailViewController.swift in Sources */,
 				C33D6A2A1F1D9C5E006AC46E /* FieldSurvey.swift in Sources */,
 				C33D6A2C1F1DA04F006AC46E /* FieldSurveryJSONParser.swift in Sources */,
 				C33D69F81F1D8E2B006AC46E /* FieldSurvey.xcdatamodeld in Sources */,
@@ -535,6 +547,7 @@
 				C33D6A191F1D8E2B006AC46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C33D6A1A1F1D8E2B006AC46E /* Build configuration list for PBXNativeTarget "FieldSurveyTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +556,7 @@
 				C33D6A1C1F1D8E2B006AC46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C33D6A1D1F1D8E2B006AC46E /* Build configuration list for PBXNativeTarget "FieldSurveyUITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +565,7 @@
 				C33D6A1F1F1D8E2B006AC46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
