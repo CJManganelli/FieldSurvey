@@ -14,6 +14,11 @@
 		C33D69FD1F1D8E2B006AC46E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33D69FB1F1D8E2B006AC46E /* LaunchScreen.storyboard */; };
 		C33D6A081F1D8E2B006AC46E /* FieldSurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A071F1D8E2B006AC46E /* FieldSurveyTests.swift */; };
 		C33D6A131F1D8E2B006AC46E /* FieldSurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A121F1D8E2B006AC46E /* FieldSurveyUITests.swift */; };
+		C33D6A261F1D96D6006AC46E /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = C33D6A251F1D96D6006AC46E /* field_observations.json */; };
+		C33D6A281F1D9A29006AC46E /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A271F1D9A29006AC46E /* Field.swift */; };
+		C33D6A2A1F1D9C5E006AC46E /* FieldSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A291F1D9C5E006AC46E /* FieldSurvey.swift */; };
+		C33D6A2C1F1DA04F006AC46E /* FieldSurveryJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A2B1F1DA04F006AC46E /* FieldSurveryJSONParser.swift */; };
+		C33D6A2E1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D6A2D1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		C33D6A0E1F1D8E2B006AC46E /* FieldSurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldSurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33D6A121F1D8E2B006AC46E /* FieldSurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyUITests.swift; sourceTree = "<group>"; };
 		C33D6A141F1D8E2B006AC46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33D6A251F1D96D6006AC46E /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		C33D6A271F1D9A29006AC46E /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		C33D6A291F1D9C5E006AC46E /* FieldSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurvey.swift; sourceTree = "<group>"; };
+		C33D6A2B1F1DA04F006AC46E /* FieldSurveryJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveryJSONParser.swift; sourceTree = "<group>"; };
+		C33D6A2D1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveryJSONLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		C33D69EE1F1D8E2B006AC46E /* FieldSurvey */ = {
 			isa = PBXGroup;
 			children = (
+				C33D6A201F1D93BF006AC46E /* Model */,
 				C33D69EF1F1D8E2B006AC46E /* AppDelegate.swift */,
 				C33D69F31F1D8E2B006AC46E /* Main.storyboard */,
 				C33D69F91F1D8E2B006AC46E /* Assets.xcassets */,
@@ -123,6 +134,18 @@
 				C33D6A141F1D8E2B006AC46E /* Info.plist */,
 			);
 			path = FieldSurveyUITests;
+			sourceTree = "<group>";
+		};
+		C33D6A201F1D93BF006AC46E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C33D6A251F1D96D6006AC46E /* field_observations.json */,
+				C33D6A271F1D9A29006AC46E /* Field.swift */,
+				C33D6A291F1D9C5E006AC46E /* FieldSurvey.swift */,
+				C33D6A2B1F1DA04F006AC46E /* FieldSurveryJSONParser.swift */,
+				C33D6A2D1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C33D69FD1F1D8E2B006AC46E /* LaunchScreen.storyboard in Resources */,
+				C33D6A261F1D96D6006AC46E /* field_observations.json in Resources */,
 				C33D69FA1F1D8E2B006AC46E /* Assets.xcassets in Resources */,
 				C33D69F51F1D8E2B006AC46E /* Main.storyboard in Resources */,
 			);
@@ -260,6 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C33D69F01F1D8E2B006AC46E /* AppDelegate.swift in Sources */,
+				C33D6A281F1D9A29006AC46E /* Field.swift in Sources */,
+				C33D6A2E1F1DB7A8006AC46E /* FieldSurveryJSONLoader.swift in Sources */,
+				C33D6A2A1F1D9C5E006AC46E /* FieldSurvey.swift in Sources */,
+				C33D6A2C1F1DA04F006AC46E /* FieldSurveryJSONParser.swift in Sources */,
 				C33D69F81F1D8E2B006AC46E /* FieldSurvey.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
