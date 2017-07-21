@@ -48,9 +48,14 @@ class FieldSurveyViewController: UIViewController, UITableViewDelegate, UITableV
             cell.titleLabel.text = fieldSurvey.title
             cell.dateLabel.text = dateFormatter.string(from: fieldSurvey.date)
         }
+        //cell.selectionStyle = .none
         
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.isSelected = false
     }
     
     
